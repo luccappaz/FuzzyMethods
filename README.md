@@ -23,7 +23,7 @@ Para testar os limites de separabilidade linear e mapeamento de topologias lógi
 
 Por ser um problema geometricamente não-linear e não-separável por uma única linha reta, o XOR serve como prova de conceito fundamental para validar se a granularidade das regras fuzzy e a sobreposição das funções de pertinência conseguem criar uma superfície de decisão capaz de isolar os quadrantes lógicos do problema.
 
-O XOR foi testado apenas com o ANFIS, o que mostrou um resultado satisfatório.
+O XOR foi testado com o ANFIS e WM, embora os dois apresentaram resultados satisfatórios, o ANFIS saiu-se melhor.
 
 ![Resultado do XOR](validacao_XOR.png)
 
