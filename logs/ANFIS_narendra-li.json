@@ -1,0 +1,38 @@
+{
+    "Benchmark": "Narendra-Li",
+    "Algoritmo": "Wang-Mendel (WMModel)",
+    "Metricas": {
+        "MAE": 0.014001967385411263,
+        "MSE": 0.0003731070028152317
+    },
+    "Estrutura": {
+        "Numero_Regras_Geradas": 243,
+        "Variaveis_Labels": {
+            "y_t": [
+                "Baixo",
+                "Medio",
+                "Alto"
+            ],
+            "y_t1": [
+                "Baixo",
+                "Medio",
+                "Alto"
+            ],
+            "y_t2": [
+                "Baixo",
+                "Medio",
+                "Alto"
+            ],
+            "u_t": [
+                "Baixo",
+                "Medio",
+                "Alto"
+            ],
+            "u_t1": [
+                "Baixo",
+                "Medio",
+                "Alto"
+            ]
+        }
+    }
+}

@@ -88,11 +88,11 @@ class ANFISModel(models.Model):
     def __init__(self, num_inputs: int, num_mfs: list[int]):
         super().__init__()
         self.anfis_layer = ANFISLayer(num_inputs, num_mfs)
-        self.sigmoid = layers.Activation("sigmoid")
+        # self.sigmoid = layers.Activation("sigmoid") # Ativar Sigmoid para o XOR
 
     def call(self, inputs):
         y = self.anfis_layer(inputs)
-        return self.sigmoid(y)
+        return y
 
 
 def plot_mfs(model: ANFISModel, X: pd.DataFrame):
