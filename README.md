@@ -163,7 +163,6 @@ Both models were evaluated:
 
 Although both achieved satisfactory results, **ANFIS obtained better performance due to its adaptive parameter optimization capability**.
 
-![XOR Result](validacao_XOR.png)
 
 ---
 
@@ -199,10 +198,11 @@ The benchmark evaluates the ability of fuzzy systems to model temporal dependenc
 
 ## XOR Benchmark
 
-| Model | Result |
-|---|---|
-| Wang-Mendel | Successful nonlinear separation |
-| ANFIS | Better classification performance |
+### Modelo Wang-Mendel
+![XOR Result](validacao_XOR_WangMendel.png)
+
+### Modelo ANFIS
+![XOR Result](validacao_XOR.png)
 
 ---
 
@@ -210,8 +210,8 @@ The benchmark evaluates the ability of fuzzy systems to model temporal dependenc
 
 | Model | RMSE | MAE |
 |---|---|---|
-| Wang-Mendel | TBD | TBD |
-| ANFIS | TBD | TBD |
+| Wang-Mendel | 0.1376 | 0.2974 |
+| ANFIS | 0.0005 |0.0168 |
 
 ---
 

@@ -1,9 +1,9 @@
 {
     "Benchmark": "Narendra-Li",
-    "Algoritmo": "Wang-Mendel (WMModel)",
+    "Algoritmo": "ANFIS",
     "Metricas": {
-        "MAE": 0.014001967385411263,
-        "MSE": 0.0003731070028152317
+        "MAE": 0.01678593084216118,
+        "MSE": 0.00048818154027685523
     },
     "Estrutura": {
         "Numero_Regras_Geradas": 243,

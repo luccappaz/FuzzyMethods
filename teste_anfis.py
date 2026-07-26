@@ -1,11 +1,12 @@
-import pandas as pd
-import numpy as np
 import keras
-from utils import save_results
-from sklearn.model_selection import train_test_split
+import numpy as np
+import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-from load_data import load_data
+from sklearn.model_selection import train_test_split
+
 from ANFIS import ANFISModel
+from load_data import load_data
+from utils import save_results
 
 X, y = load_data()
 
@@ -64,4 +65,4 @@ df_comparacao = pd.DataFrame(
 df_comparacao.to_csv("logs/anfis_results.csv")
 print("\n Amostra Comparativa (Real vs Predito):")
 print(df_comparacao)
-save_results(mae, mse, np.prod([3] * 5), att_labels, filename="ANFIS_narendra-li.json")  # type: ignore
+save_results(mae, mse, np.prod([3] * 5), att_labels, filename="ANFIS_narendra-li.json", algoritmo="ANFIS")  # type: ignore

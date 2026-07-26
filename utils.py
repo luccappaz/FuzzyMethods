@@ -1,7 +1,9 @@
-import pandas as pd
-import numpy as np
-from pathlib import Path
 import json
+from pathlib import Path
+from typing import Literal
+
+import numpy as np
+import pandas as pd
 
 
 def fuzzy_inference(
@@ -112,11 +114,12 @@ def save_results(
     mse: float,
     num_rules: int,
     labels: dict,
+    algoritmo: Literal["Wang-Mendel", "ANFIS"] = "Wang-Mendel",
     filename: str = "narendra_li.json",
 ) -> None:
     log = {
         "Benchmark": "Narendra-Li",
-        "Algoritmo": "Wang-Mendel (WMModel)",
+        "Algoritmo": algoritmo,
         "Metricas": {"MAE": float(mae), "MSE": float(mse)},
         "Estrutura": {
             "Numero_Regras_Geradas": int(num_rules),
